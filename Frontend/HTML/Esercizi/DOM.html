@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="par1" onclick="clickParagraf()">Questo è un paragrafo all'interno del body </p>
+    <script>
+        //puntare su un elemento html
+        function clickParagraf() {
+            let elemento = document.getElementById("par1");
+            elemento.style.color = "red";
+            elemento.style.fontWeight = "bold";
+
+            elemento.innerHTML = "Nuovo testo"; 
+        }
+
+    </script>
+</body>
+
+</html>

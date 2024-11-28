@@ -1,0 +1,29 @@
+ol {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+#divGrande{
+    width: 100%;
+}
+
+#main {
+    display: block;
+    margin: 2%;
+}
+
+#immagineCentrale {
+    position: relative;
+    left: 15%;
+    margin-top: -14%;
+}
+
+
+ol li{
+    text-align: center;    
+    margin: 15px;
+}

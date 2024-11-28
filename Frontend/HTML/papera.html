@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papera </title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 50px;
+        }
+        #papera {
+            font-size: 100px;
+            color: orange;
+        }
+        #soundButton {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Papera </h1>
+    <div id="papera">🦆</div>
+    <p>Clicca sul pulsante per sentire la papera che fa "miao"!</p>
+    <button id="soundButton">Fa Miao!</button>
+
+    <script>
+        // Funzione che riproduce il suono "miao"
+        function playMiao() {
+            var audio = new Audio('https://www.soundjay.com/button/beep-07.wav'); // Suono del beep
+            audio.play();
+        }
+
+        // Aggiungi un ascoltatore di eventi al pulsante
+        document.getElementById('soundButton').addEventListener('click', playMiao);
+    </script>
+
+</body>
+</html>

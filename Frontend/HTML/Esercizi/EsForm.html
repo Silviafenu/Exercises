@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto </title>
+    <link rel="stylesheet" href="../../CSS/Esercizi/EsFrom.css">
+</head>
+
+<body>
+    <div id="inizio">
+        <h1 class="title">Grand Theft Auto</h1>
+        <form method="get" class="gta-form">
+            <div class="personaggi">
+                <label for="name">Nome del personaggio:</label>
+                <input type="text" id="name" name="name" value="Inserisci il nome del personaggio">
+            </div>
+            <br>
+            <div id="selectVeicoli">
+                <label>Seleziona un veicolo:</label>
+                <div class="veicoli">
+                    <label>
+                        <input type="radio" name="veicolo" value="auto">Auto
+                    </label>
+                    <label>
+                        <input type="radio" name="veicolo" value="moto">Moto
+                    </label>
+                    <label>
+                        <input type="radio" name="veicolo" value="elicottero">Elicottero
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div id="selectMissioni">
+                <label for="missioni">Seleziona una missione:</label>
+                <select id="mission" name="mission">
+                    <option value="">-- Seleziona --</option>
+                    <option value="rapina">Prologo</option>
+                    <option value="inseguimento">Recupero materiali</option>
+                    <option value="furto">Colpo finale</option>
+                </select>
+            </div>
+            <br>
+            <textarea name="descrizione personaggio" cols="35" rows="4" placeholder="Descrivi il personaggio che vorresti"></textarea>
+            <br>
+            <button type="submit" value="clicca per iniziare">Inizia la partita</button>
+            <br>
+            <button type="submit" value="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

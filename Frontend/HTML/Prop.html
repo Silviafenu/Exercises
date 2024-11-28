@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenitore">
+
+        <p id="par1">Questo è un paragrafo all'interno del DIV conntenitore</p>
+
+        <a href="https://www.google.it/">GOOGLE</a>
+    </div>
+
+    <script>
+        /*
+        addEventListener("click", function(){
+            console.log("sto cliccando");
+        });
+        */
+        // addEventListener("click", cliccare);
+
+        var paragrafo = document.getElementById("par1");
+        paragrafo.addEventListener("click", cliccare);
+
+        var contenitore = paragrafo.parentElement;
+        contenitore.addEventListener("click", function () {
+            console.log(this.id);
+        });
+
+        var ancora = paragrafo.nextElementSibling;
+        ancora.addEventListener("click", scelta);
+
+        function cliccare(event) {
+            console.log("sto cliccando");
+            event.stopPropagation(); //blocca il bubbling quindi la risalita del flusso degli eventi 
+
+            /*
+            console.log("y" + event.screenY);
+            console.log("x" + event.screenX);
+            console.log(event.target);
+            console.log(event.type);
+
+            removeEventListener("click", cliccare); //rimuove evento anche se dentro 
+            */
+        }
+
+        function scelta(event){
+            if(!confirm("Sei sicuro di voler uscire?")){
+                event.preventDefault(); 
+                console.log("Sono rimasto nella pagina"); 
+                event.stopPropagation();
+            }
+
+        }
+    </script>
+</body>
+
+</html>

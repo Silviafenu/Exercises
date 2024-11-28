@@ -1,0 +1,29 @@
+h1,h2{
+    color: #FF0000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #EEE;
+}
+
+#par1{
+    color: #FF0000;
+}
+
+#par2{
+    font-weight: bold;
+}
+
+#par3{
+    text-decoration: underline;
+}
+
+#par4{
+    text-align: justify;
+}
+
+
+
+

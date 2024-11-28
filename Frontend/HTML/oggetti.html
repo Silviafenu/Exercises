@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetti in Javascript</title>
+</head>
+
+<body>
+    <script>
+        //notazione letterale
+        var hotel1 = {
+            nomeHotel: "T-Hotel",
+            citta: "Cagliari",
+            numeroStanze: 200,
+            stanzeOccupate: 87,
+            spa: true,
+            palestra: true,
+            tipologiaStanze: ["singola", "doppia", "tripla", "junior suite", "suite"],
+
+            checkDisponibilita: function () {
+                return this.numeroStanze - this.stanzeOccupate;
+            }
+        }
+
+        console.log(hotel1.nomeHotel);
+        console.log(hotel1.checkDisponibilita);
+        //aggiunta dopo creazione
+        hotel.via = "via boh 1";
+        console.log(hotel1.via);
+
+        var Hotel2 = new Hotel("Cesar Hotel", "Cagliari", 100, 43, true, false, ["singola", "doppia", "tripla"], "via Amsicora");
+
+
+        function Hotel(nomeHotel, citta, numeroStanze, stanzeOccupate, spa, palestra, tipologiaStanze) {
+            this.nome = nome;
+            this.citta = citta;
+            this.numeroStanze = numeroStanze;
+            this.stanzeOccupate = stanzeOccupate;
+            this.spa = spa;
+            this.palestra = palestra;
+            this.tipologiaStanze = tipologiaStanze;
+            this.via = via;
+
+            this.checkDisponibilita() = function() {
+                return this.numeroStanze - this.stanzeOccupate;
+            }
+        }
+
+        var Hotel3 = new Albergo("Holidat Inn", "Cagliari", 100, 43, true, false, ["singola", "doppia", "tripla"], "vicino 554");
+
+        class Albergo {
+            constructor(nomeHotel, citta, numeroStanze, stanzeOccupate, spa, palestra, tipologiaStanze, via) {
+                this.nome = nome;
+                this.citta = citta;
+                this.numeroStanze = numeroStanze;
+                this.stanzeOccupate = stanzeOccupate;
+                this.spa = spa;
+                this.palestra = palestra;
+                this.tipologiaStanze = tipologiaStanze;
+                this.via = via;
+            }
+
+            checkDisponibilita = function(){
+                return this.numeroStanze - this.stanzeOccupate;
+            }
+        }
+
+        //ereditarieta
+
+      //  class Resort extends Albergo
+
+
+    
+    </script>
+</body>
+
+</html>

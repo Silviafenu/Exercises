@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    font: italic;
+    font-size: 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url(../../img/sfondoSpesa.jpg) no-repeat fixed;
+    background-size: cover;
+
+
+}
+
+#title {
+    color: #fff;
+}
+
+#par {
+    color: #000000;
+}
+
+#bottone {
+    color: #006FE6;
+    border: 3px solid #006FE6;
+    font-size: 15px;
+
+}
+
+#bottone2 {
+    color: #0b6721;
+    border: 3px solid #0e9e26;
+    font-size: 15px;
+
+
+}
+
+#main {
+    height: 550px;
+    width: 300px;
+    margin: auto;
+    background: white;
+    opacity: 0.5;
+    border: 1px solid;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+}
+
+.bottoneX {
+    margin-left: auto;
+   
+}
+
+#lista {
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+body {
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+     url(../../img/sfondo.jpg) no-repeat center;
+    text-align:center;
+    height: 140vh;
+    color: #FFFFFF;
+}
+
+#inizio{
+    font-size: 23px;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+
